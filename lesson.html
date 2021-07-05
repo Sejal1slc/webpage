@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title></title>
+    <style>
+        body {
+            background-color: #EDEEF0;
+        }
+        .navbar {
+            height: 100%;
+            width: 120px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: white;
+            overflow: auto;
+            padding-top: 16px;
+            box-shadow: 10px 10px 8px #888888;
+            text-decoration: none;
+            display: block;
+        }
+        .navbar a {
+            padding: 15px 15px 15px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: gray;
+            display: block;
+            border-bottom: 15px solid transparent;
+        }
+            .navbar a:hover {
+                background-color: #E3EBFE;
+                color: black;
+                text-decoration: none;
+                border-left-color: blue;
+                border-left-style: double;
+                padding: 15px 15px 15px 15px;
+                display: block;
+            }
+
+        input[type=text] {
+            width: 800px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: block;
+            border: 1px solid #FCFCFC;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: #FCFCFC;
+        }
+
+        .right {
+            right: 0;
+            background-color: lightgray
+        }
+
+        .side {
+            position: fixed;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .d1 {
+            width: 100px;
+            height: 70px;
+            padding: 50px;
+            border: 1px solid white;
+            background-color: #FCFCFC;
+            text-decoration: none;
+        }
+
+        #a1 {
+            position: absolute;
+            left: 10%;
+            top: 15%;
+            right: 10%;
+            text-decoration: none;
+            color: cadetblue;
+        }
+
+        #a2 {
+            text-decoration: none;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <div  style="background-color:white;width:1500px;height:80px">
+            <div class="navbar">
+                <img src="1.png" width="80%" height="10%" />
+                <a href="student.html" target="_top"><i class="fa fa-fw fa-user"></i><br /> Students</a>
+                <a href="lesson.html" target="_top"><i class="fa fa-fw fa-book"></i><br /> Lesson Plan</a>
+                <a href="setting.html" target="_top"><i class="fa fa-fw fa-gear"></i><br /> Settings</a>
+            </div>
+           
+            <div class="right">
+            <a href="#" id="a1" style="align-items:flex-start"><i class="fa fa-caret-left"><b> Videos</b></i></a>
+            <div class="side">
+                <input type="text" placeholder="insert url here" name="url" />
+                <br />
+                <br />
+                <b>or</b>
+                <br />
+                <br />
+                <div class="d1">
+                    <a href="#" id="a2"><b>upload</b></a>
+                </div>
+            </div>
+            </div>
+    </div>
+</body>
+</html>
